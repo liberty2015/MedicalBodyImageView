@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liberty.medicalbodyview.MainActivity">
+
+    <com.liberty.library.MedicineBodyView
+        android:id="@+id/body"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Switch
+            android:id="@+id/gender"
+            android:text="性别"
+            android:textOn="女性"
+            android:textOff="男性"
+            android:layout_below="@id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/exchange"
+            android:text="正反面"
+            android:textOn="背面"
+            android:textOff="正面"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/body"
+            android:layout_toRightOf="@id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line_color">#f98047</color>
+    <color name="cover_color">#a8e56600</color>
+    <color name="ripple_inner">#edf7f6f6</color>
+    <color name="ripple_middle">#f65e93c2</color>
+</resources>
